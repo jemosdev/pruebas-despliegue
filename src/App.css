@@ -1,0 +1,8 @@
+:root {
+  --background-color-0: #000;
+  --background-color-1: #111111;
+}
+
+.app {
+  background-color: var(--background-color-1);
+}

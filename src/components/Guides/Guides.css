@@ -1,0 +1,38 @@
+.guide-container {
+    background-color: var(--background-color-1);
+}
+.guide-container .guide-text b {
+    background: #7E35E4;
+    -webkit-background-clip: text;
+    /* no necesariamente compatible */
+    color: transparent;
+}
+.bgTopLeft, .bgBottomRight {
+    background-image: url("../../assets/bards.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-clip: content-box;
+}
+.bgTopLeft {
+    background-position: left top;
+}
+.bgBottomRight {
+    background-position: bottom right;
+}
+@media screen and (max-width: 580px) {
+
+    .bgTopLeft {
+        background-position: left -2px top -2px; /* Alejar la barra inclinada del contenido */
+        background-size: 70px; /* Ajusta el tamaño de la imagen según sea necesario */
+    }
+
+    .bgBottomRight {
+        background-position: bottom -2px right -2px; /* Alejar la barra inclinada del contenido */
+        background-size: 70px; /* Ajusta el tamaño de la imagen según sea necesario */
+    }
+
+    .guide-container .container {
+        padding-top: 3rem; /* Añade espacio en la parte superior */
+        padding-bottom: 3rem; /* Añade espacio en la parte inferior */
+    }
+}
